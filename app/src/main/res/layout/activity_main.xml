@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.tictactoe.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:textSize="24sp"
+            android:layout_marginLeft="8dp"
+            android:text="Player 1 select a game piece"/>
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_marginLeft="16dp">
+
+            <RadioButton
+                android:id="@+id/select_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:layout_margin="8dp"
+                android:textSize="24sp"/>
+            <RadioButton
+                android:id="@+id/select_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:layout_margin="8dp"
+                android:textSize="24sp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="24sp"
+            android:text="Select a board type to play"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="16dp">
+
+
+            <Button
+                android:id="@+id/board3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3x Board"
+                android:textSize="22sp"
+                android:layout_marginRight="4dp"
+                android:layout_gravity="center"
+                android:onClick="start_board3"/>
+
+            <Button
+                android:id="@+id/board5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5x Board"
+                android:layout_marginLeft="4dp"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:onClick="start_board5"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
