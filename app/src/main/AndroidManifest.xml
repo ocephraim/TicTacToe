@@ -16,8 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Board3xActivity" />
-        <activity android:name=".Board5xActivity"></activity>
+        <activity
+            android:name=".Board3xActivity"
+            android:label="3x3 Mode"
+            android:parentActivityName=".MainActivity">
+
+            <!--Parent activity meta-data to support 4.0 and lower-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.tictactoe.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".Board5xActivity"
+            android:label="5x5 Mode"
+            android:parentActivityName=".MainActivity">
+
+            <!--Parent activity meta-data to support 4.0 and lower-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.tictactoe.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>
